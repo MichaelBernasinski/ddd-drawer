@@ -3,12 +3,11 @@ import type { Dragee } from "@dragee-io/type/common";
 import dddClassDiagram from "..";
 
 const graphId = 'ddd/class-diagram';
+const classDiagramGraph = dddClassDiagram.graphs.filter(graph => graph.id === graphId)[0];
 
 describe('Should display correct DDD class diagram', () => {
     test('with no dragees', async () => {
         const dragees: Dragee[] = [];
-
-        const classDiagramGraph = dddClassDiagram.graphs.filter(graph => graph.id === graphId)[0];
         const graphResult = classDiagramGraph.handler(dragees);
         
         expect(graphResult).toBeEmpty();  
@@ -20,7 +19,6 @@ describe('Should display correct DDD class diagram', () => {
         const drageeThree: Dragee = await Bun.file("./test/sample/drageeThree.json").json();
         const dragees: Dragee[] = [drageeOne, drageeTwo, drageeThree];
 
-        const classDiagramGraph = dddClassDiagram.graphs.filter(graph => graph.id === graphId)[0];
         const graphResult = classDiagramGraph.handler(dragees);
 
         const testExpectedResult = await Bun.file("./test/expected/testExpectedResult.md").text();
