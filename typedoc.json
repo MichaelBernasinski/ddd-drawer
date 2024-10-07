@@ -1,0 +1,10 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+    "extends": ["@dragee-io/type/typedoc.json"],
+    "name": "DDD Grapher",
+    "entryPoints": ["src/graphs"],
+    "out": "docs",
+    "navigationLinks": {
+        "GitHub": "https://github.com/MichaelBernasinski/ddd-grapher"
+    }
+}

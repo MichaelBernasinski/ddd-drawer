@@ -1,29 +1,27 @@
 # ddd-grapher
 
-Graph drawer for DDD
+DDD Graphs drawer for dragee-cli project.
 
-### Class Diagram
+To install dependencies:
 
-[Markdown Class Diagram](./src/graphs/ddd-class-diagram.graph.ts) with [mermaidjs](https://github.com/mermaid-js/mermaid)
+```bash
+bun install
+```
 
-```mermaid
-	classDiagram
-	namespace io-dragee-rules-relation {
-		class DrageeOne {
-			<<ddd/aggregate>>
-		}
+To run:
 
-		class DrageeTwo {
-			<<ddd/entity>>
-		}
-	}
-	DrageeOne --> DrageeTwo : field, constructor, method_param
-	DrageeOne --> DrageeThree : constructor, method_param
+```bash
+bun run index.ts
+```
 
-	namespace io-dragee-rules-anotherPackage {
-		class DrageeThree {
-			<<ddd/value_object>>
-		}
-	}
+To run tests:
 
+```bash
+bun test
+```
+
+To generate documentation
+
+```bash
+bun typedoc
 ```

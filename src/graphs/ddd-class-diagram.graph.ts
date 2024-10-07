@@ -1,3 +1,34 @@
+/**
+ * **class-diagram**
+ * 
+ * Markdown Class Diagram with [mermaidjs](https://github.com/mermaid-js/mermaid)
+ * 
+ * ## Example
+ * 
+ * ```mermaid
+ *  classDiagram
+ * 	namespace io-dragee-rules-relation {
+ * 		class DrageeOne {
+ * 			<<ddd/aggregate>>
+ * 		}
+ * 		class DrageeTwo {
+ * 			<<ddd/entity>>
+ * 		}
+ * 	}
+ * 	DrageeOne --> DrageeTwo : field, constructor, method_param
+ * 	DrageeOne --> DrageeThree : constructor, method_param
+ * 
+ * 	namespace io-dragee-rules-anotherPackage {
+ * 		class DrageeThree {
+ * 			<<ddd/value_object>>
+ * 		}
+ * 	}
+ * ```
+ * <br/> 
+ * <img src="../../assets/ddd-class-diagram.png" alt="DDD Class Diagram">
+ * 
+ * @module Class Diagram
+ */
 import type { Dependency, Dragee } from "@dragee-io/type/common";
 
 const drawHandlerClassDiagram = (dragees: Dragee[]) => {
