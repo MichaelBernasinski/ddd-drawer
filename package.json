@@ -1,0 +1,16 @@
+{
+  "name": "@dragee-io/ddd-grapher",
+  "module": "index.ts",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {},
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "@dragee-io/type": "https://github.com/MichaelBernasinski/dragee-model"
+  }
+}

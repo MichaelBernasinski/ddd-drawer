@@ -1,0 +1,5 @@
+{
+  "name": "io.dragee.rules.relation.DrageeTwo",
+  "profile": "ddd/entity",
+  "depends_on": {}
+}
