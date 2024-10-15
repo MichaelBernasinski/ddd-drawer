@@ -1,15 +1,8 @@
 {
-  "name": "io.dragee.rules.relation.DrageeOne",
-  "profile": "ddd/aggregate",
-  "depends_on": {
-    "io.dragee.rules.relation.DrageeTwo": [
-      "field",
-      "constructor",
-      "method_param"
-    ],
-    "io.dragee.rules.relation.DrageeThree": [
-      "constructor",
-      "method_param"
-    ]
-  }
+    "name": "io.dragee.rules.relation.DrageeOne",
+    "profile": "ddd/aggregate",
+    "depends_on": {
+        "io.dragee.rules.relation.DrageeTwo": ["field", "constructor", "method_param"],
+        "io.dragee.rules.relation.DrageeThree": ["constructor", "method_param"]
+    }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "io.dragee.rules.relation.DrageeTwo",
-  "profile": "ddd/entity",
-  "depends_on": {}
+    "name": "io.dragee.rules.relation.DrageeTwo",
+    "profile": "ddd/entity",
+    "depends_on": {}
 }

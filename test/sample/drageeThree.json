@@ -1,5 +1,5 @@
 {
-  "name": "io.dragee.rules.anotherPackage.DrageeThree",
-  "profile": "ddd/value_object",
-  "depends_on": {}
+    "name": "io.dragee.rules.anotherPackage.DrageeThree",
+    "profile": "ddd/value_object",
+    "depends_on": {}
 }
