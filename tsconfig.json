@@ -1,4 +1,5 @@
 {
+    "extends": "@dragee-io/type/tsconfig.bun",
     "compilerOptions": {
         "lib": ["ESNext"],
         "target": "ESNext",
@@ -6,14 +7,12 @@
         "moduleDetection": "force",
         "jsx": "react-jsx",
         "allowJs": true,
-        "declaration": true,
-        "emitDeclarationOnly": true,
 
         /* Bundler mode */
         "moduleResolution": "bundler",
         "allowImportingTsExtensions": true,
         "verbatimModuleSyntax": true,
-        "noEmit": false,
+        "noEmit": true,
 
         /* Linting */
         "skipLibCheck": true,
