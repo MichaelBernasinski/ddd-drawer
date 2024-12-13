@@ -24,8 +24,8 @@
  * 		}
  * 	}
  * ```
- * <br/>
- * <img src="../../assets/ddd-class-diagram.png" alt="DDD Class Diagram" />
+ * 
+ * ![DDD Class Diagram](../../assets/ddd-class-diagram.png)
  *
  * @module Class Diagram
  */
