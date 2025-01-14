@@ -2,7 +2,6 @@
     "name": "@dragee-io/ddd-grapher",
     "module": "index.ts",
     "type": "module",
-    "version": "0.0.1",
     "scripts": {
         "format": "biome format --write",
         "lint": "biome lint",
